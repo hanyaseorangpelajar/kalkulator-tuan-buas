@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Hubot-Sans';
+    src: url(/fonts/Hubot-Sans-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hubot-Sans';
+    color: black;
+}
+
+body>h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.header > ul {
+    list-style: none;
+    display: flex;
+}
+
+.the-list > li {
+    padding: 10;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 20px; /* Adjust padding for the normal state */
+    border-radius: 8px;
+    min-width: 100px; /* Add a minimum width to the button */
+    display: inline-block; /* Ensure inline-block to apply width */
+}
+
+a:hover {
+    background-color: rgb(65, 190, 255);
+    color: #efefee;
+    border-radius: 8px;
+}
+
+#judul>#bag1 {
+    color: rgb(65, 190, 255);
+}
+
+#judul>#bag2 {
+    color: #f039b1;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.button {
+    flex-basis: 25%;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(top, rgb(82, 197, 255), rgb(48, 183, 255));
+    cursor: pointer;
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.display {
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333333;
+    border: 1px solid black;
+    font-size: 2em;
+}
+
+.operator,
+.negative,
+.equals {
+    background: #f039b1;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+
+    .history {
+        width: 100%;
+    }
+}
+
+.history {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    overflow: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+th {
+    background-color: orange;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #d2d2d2;
+}
+
+h2 {
+    text-align: center;
+}
